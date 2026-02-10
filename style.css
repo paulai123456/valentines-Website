@@ -47,11 +47,11 @@ body {
 .name { font-size: 1.7rem; font-weight: bold; }
 .love { font-size: 1.4rem; color: #ff4f9a; }
 
-/* RIGHT */
 .right {
   width: 50%;
   padding: 35px;
   text-align: center;
+  min-width: 280px; /* ensures enough room for 6 numbers */
 }
 
 .hidden { display: none; }
@@ -61,8 +61,11 @@ h2 span { color: #ff4f9a; }
 /* DISPLAY */
 .display {
   font-size: 2rem;
-  letter-spacing: 15px;
+  letter-spacing: 12px; /* slightly smaller for 6 digits */
   margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* ensures all 6 dots fit nicely */
 }
 
 /* KEYPAD */
@@ -445,3 +448,4 @@ h2 span { color: #ff4f9a; }
     font-size: 1.5rem;
   }
 }
+
