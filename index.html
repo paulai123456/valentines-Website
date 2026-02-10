@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💗 Sweet Lock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper fade-in">
+
+  <!-- LEFT SIDE: MESSAGE -->
+  <div class="left">
+    <img src="mocha.gif" alt="Mocha gif" class="mocha-img">
+    <p class="hi">Hi my</p>
+    <p class="name">Honeybunch Sugarplum!</p>
+    <p class="love">I love you</p>
+  </div>
+
+  <!-- RIGHT SIDE: PASSWORD LOCK -->
+  <div class="right" id="lock">
+    <h2>The password is our<br><span>Monthsary</span></h2>
+
+    <div class="display">
+      <span id="d1">*</span>
+      <span id="d2">*</span>
+      <span id="d3">*</span>
+      <span id="d4">*</span>
+    </div>
+
+    <div class="keypad">
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="press('0')" class="zero">0</button>
+    </div>
+
+    <!-- WRONG PASSWORD MESSAGE -->
+    <div class="wrong hidden shake" id="wrong">
+      <img src="sadmocha.gif" alt="Sad Mocha gif">
+      <p class="wrong-text">That seems wrong my love!</p>
+      <button onclick="restart()" class="restart">RETRY</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
