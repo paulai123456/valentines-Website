@@ -92,12 +92,34 @@ h2 span { color: #ff4f9a; }
 
 .zero { grid-column: span 3; }
 
-/* WRONG */
-.wrong-text {
-  margin: 20px 0;
-  color: #ff4f9a;
+/* WRONG PASSWORD MESSAGE */
+.wrong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
+.wrong.hidden {
+  display: none; /* hidden by default */
+}
+
+.wrong img {
+  width: 150px; /* adjust size of sad Mocha */
+  margin-bottom: 15px;
+}
+
+.wrong-text {
+  color: #ff4f9a;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* RETRY BUTTON */
 .restart {
   padding: 12px 25px;
   border: none;
@@ -105,8 +127,14 @@ h2 span { color: #ff4f9a; }
   background: #ff4f9a;
   color: white;
   cursor: pointer;
+  transition: 0.2s;
 }
 
+.restart:hover {
+  transform: scale(1.05);
+}
+
+/* SHAKE ANIMATION */
 .shake {
   animation: shake 0.4s;
 }
@@ -118,6 +146,7 @@ h2 span { color: #ff4f9a; }
   75% { transform: translateX(-5px); }
   100% { transform: translateX(0); }
 }
+
 .card {
   background: white;
   padding: 50px;
@@ -448,4 +477,3 @@ h2 span { color: #ff4f9a; }
     font-size: 1.5rem;
   }
 }
-
