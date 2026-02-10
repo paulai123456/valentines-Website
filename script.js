@@ -13,7 +13,7 @@ function press(num) {
 }
 
 function updateDisplay() {
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 6; i++) { // ✅ changed from 4 → 6
     document.getElementById("d" + i).textContent =
       input[i - 1] ? "●" : "*";
   }
@@ -37,5 +37,4 @@ function restart() {
   updateDisplay();
   document.getElementById("wrong").classList.add("hidden");
   document.getElementById("lock").classList.remove("hidden");
-
 }
