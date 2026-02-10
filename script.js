@@ -1,13 +1,13 @@
 let input = "";
-const password = "0123"; // 💗 CHANGE THIS
+const password = "112924"; // 💗 CHANGE THIS
 
 function press(num) {
-  if (input.length >= 4) return;
+  if (input.length >= 6) return;
 
   input += num;
   updateDisplay();
 
-  if (input.length === 4) {
+  if (input.length === 6) {
     setTimeout(checkPassword, 300);
   }
 }
@@ -37,4 +37,5 @@ function restart() {
   updateDisplay();
   document.getElementById("wrong").classList.add("hidden");
   document.getElementById("lock").classList.remove("hidden");
+
 }
